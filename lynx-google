@@ -2,7 +2,7 @@
 # Opens a lynx browser searching any terms that follow the name of this script
 
 #Td +aq @ < 'lynx -listonly -dump -cookies -accept-all-cookies "https://www.google.com/search?as_q=&as_epq=Esame+di+Maturit%C3%A0&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=normattiva.it&as_occt=any&as_filetype=&tbs="'
-#ch pp~> at dl pdf -> z. 'lynx -listonly -dump -cookies -accept-all-cookies "https://www.google.com/search?as_q=&as_epq=Esame+di+Maturit%C3%A0&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=normattiva.it&as_occt=any&as_filetype=&tbs=" | grep -o -P "q=https://www.normattiva.it.*?&sa" | grep -o -P "https://[^&]*"'
+#ch pp~> at dl pdf -> z. 'lynx -listonly -dump -cookies -accept-all-cookies "https://www.google.com/search?as_q=&as_epq=Esame+di+Maturit%C3%A0&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=normattiva.it&as_occt=any&as_filetype=&tbs=" | grep -o -P "q=https://www.normattiva.it.*?&sa" | grep -o -P "https://[^&]*" | xargs firefox'
 
 
 url="https://www.google.com/search?q="
